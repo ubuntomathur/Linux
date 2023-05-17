@@ -1,0 +1,14 @@
+
+OK  ] Reached target Switch Root.
+         Starting Switch Root...
+[!!!!!!] Failed to load SELinux policy, freezing
+
+
+#/etc/selinux/targeted/policy/
+#mv /etc/selinux/targeted /root/selinux-targeted-archive
+#semodule -B
+#semanage export -f /root/semanage-export
+#semodule -lfull > /root/semodule-list
+# mv /etc/selinux/targeted /root/selinux-targeted-archive
+# yum reinstall selinux-policy-targeted
+#semanage import -f /root/semanage-export
