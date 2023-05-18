@@ -4,7 +4,8 @@ OK  ] Reached target Switch Root.
 [!!!!!!] Failed to load SELinux policy, freezing
 
 
-#/etc/selinux/targeted/policy/
+#cd /etc/selinux/targeted/policy/
+there is policy.31 file 
 #mv /etc/selinux/targeted /root/selinux-targeted-archive
 #semodule -B
 #semanage export -f /root/semanage-export
